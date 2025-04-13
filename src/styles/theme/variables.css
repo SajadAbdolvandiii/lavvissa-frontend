@@ -1,0 +1,12 @@
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --accent-color: #D4AF37;
+    --text-color: #fff;
+    --background-color: #000;
+    --card-background: rgba(255, 255, 255, 0.05);
+    --border-color: rgba(255, 255, 255, 0.1);
+    --hover-color: rgba(255, 255, 255, 0.1);
+    --font-family: 'IRANSans', sans-serif;
+    --transition-speed: 0.3s;
+}

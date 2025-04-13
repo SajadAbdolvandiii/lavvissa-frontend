@@ -1,0 +1,112 @@
+.pick-card {
+    background: var(--card-background);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform var(--transition-speed);
+    position: relative;
+    border: 1px solid var(--border-color);
+}
+
+.pick-card:hover {
+    transform: translateY(-5px);
+}
+
+.pick-image {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    transition: transform var(--transition-speed);
+}
+
+.pick-card:hover .pick-image {
+    transform: scale(1.05);
+}
+
+.pick-content {
+    padding: 1.5rem;
+}
+
+.pick-tag {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    background: var(--accent-color);
+    color: var(--text-color);
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.pick-card h3 {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.pick-description {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.pick-price {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.pick-price-toman {
+    display: block;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 0.5rem;
+}
+
+.pick-button {
+    width: 100%;
+    padding: 0.8rem;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all var(--transition-speed);
+    font-size: 0.9rem;
+}
+
+.pick-button:hover {
+    background: var(--hover-color);
+    border-color: var(--accent-color);
+}
+
+
+/* Special styling for first card */
+
+.picks-grid .pick-card:first-child {
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+    transform: scale(1.02);
+}
+
+.picks-grid .pick-card:first-child .pick-button {
+    background: linear-gradient(135deg, var(--accent-color), #FFD700);
+    border: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.picks-grid .pick-card:first-child .pick-button:hover {
+    background: linear-gradient(135deg, #FFD700, var(--accent-color));
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
+.picks-grid .pick-card:first-child .pick-tag {
+    background: linear-gradient(135deg, var(--accent-color), #FFD700);
+    color: var(--primary-color);
+    font-weight: 600;
+}
