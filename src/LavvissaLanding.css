@@ -243,6 +243,27 @@ html {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+}
+
+.user-icon.logged-in {
+    position: relative;
+}
+
+.login-indicator {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 8px;
+    height: 8px;
+    background-color: #00C851;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.nav-user-link {
+    text-decoration: none;
+    color: inherit;
 }
 
 .search-icon:hover,
